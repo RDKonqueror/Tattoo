@@ -1,5 +1,5 @@
 # Tattoo
-Select a tattoo design from catalogue. 
+Select a tattoo design from catalog. 
 This webpage is created with HTML, CSS and Javascript. The speciality of this design is it's background slideshow.
 
 
