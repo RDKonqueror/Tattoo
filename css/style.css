@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #000;
+    font-family: Tahoma, sans-serif;
+    letter-spacing: 1px;
+}
+header, footer {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+header {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+header h1 {
+    font-family: 'Alex Brush', cursive;
+    color: #9a9bab;
+    text-shadow: 2px 2px 0 #2a3132;
+}
+nav a {
+    color: #fef2e4;
+    text-shadow: 1px 1px 0 #000;
+    font-size: 14px;
+    padding: 5px 8px;
+    display: inline-block;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.slide_container {
+    position: relative;
+    overflow: hidden;
+}
+.slides {
+    display: none;
+    animation-name: fade;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+.slides img {
+    height: 100vh;
+    width: 100%;
+    vertical-align: middle;
+}
+.btn_container {
+    position: absolute;
+    z-index: 1;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+.btn_container p {
+    text-shadow: 2px 2px 8px #000;
+    font-size: 32px;
+    color: #fef2e4;
+    margin-bottom: 25px;
+}
+.btn_container a {
+    margin: 15px;
+    border-radius: 24px;
+    font-size: 16px;
+    display: inline-block;
+    box-shadow: 1px 1px 10px #000;
+    transition: 0.5s;
+    animation-name: btnFadeOut;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-delay: 39s;
+}
+a.more {
+    background-color: #fef2e4;
+    color: #213a32;
+    border: 1.5px solid #fef2e4;
+    padding: 16px 30px;
+}
+.more:hover {
+    background-color: transparent;
+    color: #f1f1f2;
+    border: 1.5px solid #fef2e4;
+}
+a.contact {
+    background-color: #805a3b;
+    color: #f1f1f2;
+    padding: 17px 30px;
+}
+.contact:hover {
+    background-color: #763626;
+}
+footer {
+    color: #fef2e4;
+    text-align: right;
+    padding: 0 15px 10px 0;
+    bottom: 0;
+    font-size: 12px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.4;
+    } 
+    35%, 65% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+@keyframes btnFadeOut {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
